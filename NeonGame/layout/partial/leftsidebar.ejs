@@ -1,0 +1,45 @@
+<%- css('css/leftsidebar.css') %>
+<%- js('js/hidebar.js') %>
+<div class="leftpanel_out" id="leftpanel_out">
+    <div class="block1"></div>
+
+    <div class="profile_background" id="profile_background">
+        <a href="<%- url_for('/')  %>"" title="Navigation" target="_self">
+            <img class="profile" src="<%- url_for('/images/profile.jpg') %>" />
+        </a>
+    </div>
+
+    <img class="block2" src="<%- url_for('/images/block.png') %>"/>
+
+    <div class="buttons">
+        <a>
+           
+        </a>
+        <a href="https://space.bilibili.com/26209665" title="bilibili">
+            <img class="shadowfilter bilibili" src="<%- url_for('/images/icon/bilibili_btn.png') %>"/>
+        </a>
+         <a>
+           
+        </a>
+        <a href="https://gatongone.lofter.com/" title="lofter">
+            <img class="shadowfilter lofter" src="<%- url_for('/images/icon/lofter_btn.png') %>"/>
+        </a>
+         <a>
+           
+        </a>
+         <a href="https://github.com/Gatongone/" title="github">
+            <img class="shadowfilter github" src="<%- url_for('/images/icon/github_btn.png') %>"/>
+        </a>
+         <a>
+           
+        </a>
+        <a href="https://blog.csdn.net/Gatongone" title="CSDN">
+            <img class="shadowfilter csdn" src="<%- url_for('/images/icon/csdn_btn.png') %>"/>
+        </a>
+    </div>
+    <div class="block3"></div>
+</div>
+<script>
+    var obj=document.getElementById('leftpanel_out');
+    MoveBar(obj,"leftpanel_in",1150)
+</script>

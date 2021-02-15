@@ -1,0 +1,34 @@
+<head>
+    <title><%- page.title %></title>
+</head>
+<body>
+
+    <%- css('css/post.css') %>
+    <%- css('css/hightlight.css') %>
+
+
+
+    <div class="page_title" id="page_title">
+        <%- page.title %>
+    </div>
+        
+    <hr>
+    <div class="page_content">
+        <% var content = page.content; %>
+        <%  content = content.replace( /img src=".+"/g , "$& style=\"max-width:100%;\" "); %>
+        <%- content %>
+    </div>
+    
+    <div class="footer">
+    <hr>
+        <font><%-  page.date.format(" ©YYYY ") %></font>
+        <a href="https://github.com/Gatongone/" style="color: rgb(214, 207, 218);">Gatongone</a>
+        some copyrights reserved
+        <div style="float: right; margin-right: -200px;">
+             <%-  page.date.format(" MMM Do  YYYY,  h:mm:ss ") %> |
+            <font>Powered by</font>
+            <a href="https://hexo.io/"  style="color: rgb(214, 207, 218);">Hexo</a>
+            framework
+     </div>
+    </div>
+</body>

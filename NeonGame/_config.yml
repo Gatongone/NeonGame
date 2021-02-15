@@ -1,0 +1,11 @@
+##页面
+menu:
+  main: /
+  blog: /blog
+  plan: /plan
+  RSS: /RSS
+  Resume: /Resume
+
+
+##文章
+line_number: false

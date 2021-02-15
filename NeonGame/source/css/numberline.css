@@ -1,0 +1,35 @@
+
+.hljs ul
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:11px;
+    margin: 0 0 0 0px!important;
+    padding-left: 5px;
+}
+
+.hljs li
+{
+
+    list-style: decimal-leading-zero;
+    border-left: 0.5px solid rgba(104, 103, 103, 0.247)!important;
+    border: 0;
+    width: 0;
+    padding: 3.5px 30px!important;
+    margin: 0!important;
+    line-height: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.hljs li:hover
+{
+    background-color:rgb(20, 10, 43);
+}
+.hljs li:nth-of-type(even)
+ {
+
+    color: inherit
+
+}
+.hljs-comment,.hljs-quote {
+	color:rgba(53, 52, 128, 0.808);
+}

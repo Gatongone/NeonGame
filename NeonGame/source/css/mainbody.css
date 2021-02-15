@@ -1,0 +1,85 @@
+.mainbody
+{
+    position: absolute;
+    width: 61%;
+    left: 16.5%;
+    margin-top: 93px;
+    margin-right: 12%;
+}
+.home_btn
+{
+    right: 0%;
+    bottom: 0%;
+    margin-right:30px;
+    margin-bottom: 80px;
+    position: fixed;
+    height: 55px;
+    width: 55px;
+    border-radius: 360px;
+    background-color: rgba(14, 14, 41, 0.397);
+    border: 2px solid rgba(111, 110, 112, 0.459);
+    outline: none;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+.home_btn:hover
+{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+}
+.home_btn img
+{
+    height: 15px;
+    width: 15px;
+    opacity: 0.5;
+
+}
+
+.top_btn
+{
+    right: 0%;
+    bottom: 0%;
+    margin-right:30px;
+    margin-bottom: 150px;
+    position: fixed;
+    height: 55px;
+    width: 55px;
+    border-radius: 360px;
+    background-color: rgba(14, 14, 41, 0.397);
+    border: 2px solid rgba(111, 110, 112, 0.459);
+    outline: none;
+    opacity: 0;
+    z-index: 2; 
+    transition: all 0.5s ease-in-out;
+}
+.top_btn_show
+{
+    right: 0%;
+    bottom: 0%;
+    margin-right:30px;
+    margin-bottom: 150px;
+    position: fixed;
+    height: 55px;
+    width: 55px;
+    border-radius: 360px;
+    background-color: rgba(14, 14, 41, 0.397);
+    border: 2px solid rgba(111, 110, 112, 0.459);
+    outline: none;
+    opacity: 1;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+.top_btn:hover
+{
+    transform: translate3d(0,-7px,0);
+    transition: all 0.7s ease-in-out;
+    cursor:pointer;
+}
+.top_btn img
+{
+    height: 15px;
+    width: 15px;
+    opacity: 0.5;
+
+}

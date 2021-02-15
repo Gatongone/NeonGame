@@ -1,0 +1,28 @@
+<%- css('css/post_entry.css') %>
+<div class="post_entry">
+
+    <a class="post_title" href="<%- config.root %><%- post.path %>"  target="_self"><%- post.title %> </a>   
+    
+    </br>
+    <span class="content">
+            <% var shortContent = strip_html(post.content) %>
+            <% shortContent = shortContent.replace(/\&gt\;?/g,">"); %>
+            <% shortContent = shortContent.replace(/\&\#123\;?/g,"\{"); %>
+            <%= shortContent.substring(0, 220) %>...
+    </span>
+
+    <div>
+        <img src="<%- url_for('images/icon/date.png') %>" alt="">
+        <span><%- post.date.format(" MMM Do,   YYYY") %></span>
+
+        <img src="<%- url_for('images/icon/time.png') %>" alt="">
+        <span><%- post.readtime %></span>
+
+        <img src="<%- url_for('images/icon/view.png') %>" alt="">
+        <span class="view">6564</span>
+    </div>
+    <hr color=#49495b SIZE=1>
+</div>
+<script>
+      var Month= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+</script>

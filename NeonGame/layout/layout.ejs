@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Gatongone">
+    <meta name="Description" content="Gatongone's Blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body
+        {
+            background-color: rgb(20, 20, 34);
+            -ms-overflow-style: none; /* IE 10+ */
+            scrollbar-width: none; /* Firefox */
+            
+        }
+        ::-webkit-scrollbar
+        {
+        display: none; /* Chrome Safari */
+        }
+    </style>
+</head>
+
+    <body>
+        <%- partial('partial/leftsidebar') %>                       <!-- 加载侧边栏 -->
+
+        <div class='body-wrapper' id="body-wrapper">
+
+            <%- body %>                                             <!--  加载主体  -->
+
+        </div>                                                                 
+        <%- js(['js/searchbar.js','js/hidebar.js']) %>              <!--    加载JS  -->                                                          
+    </body>
+
+</html>

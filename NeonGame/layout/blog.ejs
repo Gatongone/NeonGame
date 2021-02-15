@@ -1,0 +1,26 @@
+<head>
+    <title>
+        <%- page.title %>
+    </title>
+</head>
+<body>
+    <%- partial('partial/topbar') %>
+    <%- partial('partial/mainbody') %>
+
+<script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+<% if(theme.line_number){ %>
+    <%- css('css/numberline') %>
+    <script>
+        var e = document.querySelectorAll("code");
+        var e_len = e.length;
+        var i;
+        for (i = 0; i < e_len; i++) {
+            e[i].innerHTML = "<ul><li>" + e[i].innerHTML.replace(/\n/g, "\n</li><li>") + "\n</li></ul>";
+        }
+    </script>
+<% } %>
+</body>

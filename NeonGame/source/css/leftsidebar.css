@@ -1,0 +1,159 @@
+.leftpanel_out
+{
+    background-color:rgb(32, 31, 50);
+    position: fixed;
+
+    height:620px;
+    width: 180px;
+    margin-left: -10px;
+    bottom: 10%;
+    top:10%;
+
+    border-top-right-radius:110px;
+    border-bottom-right-radius:110px;
+    box-shadow: 0px 0px 30px 20px rgba(20, 3, 41, 0.25);
+
+    transition: all 0.5s ease-in-out;
+}
+.leftpanel_in
+{
+    background-color:rgb(32, 31, 50);
+    position: fixed;
+
+    height:620px;
+    width: 180px;
+    margin-left: -10px;
+    bottom: 10%;
+    top:10%;
+
+    border-top-right-radius:110px;
+    border-bottom-right-radius:110px;
+    box-shadow: 0px 0px 30px 20px rgba(20, 3, 41, 0.25);
+
+    
+    transform: translate3d(-180px,0,0);
+    transition: all 0.5s ease-in-out;
+}
+.profile_background
+{
+
+    height:100px;
+    width: 100px;
+    margin-top: 40px;
+    margin-left:20px;
+    
+    border-radius: 90px;
+    background-image: linear-gradient(to bottom right,rgb(220,59,177), rgb(110,12,255));
+    box-shadow: 0px 0px 10px 10px rgba(20, 3, 41, 0.4);
+
+}
+.profile
+{
+    height: 90px;
+    width: 90px;
+    margin-top: 4px;
+    margin-left: 4px;
+
+    border:1px solid#33112960;
+    border-radius: 100px;
+ 
+    image-rendering: -moz-crisp-edges;      
+    image-rendering:   -o-crisp-edges;        
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;  
+    -ms-interpolation-mode: nearest-neighbor; 
+    transition: all 0.2s ease-in-out;
+    /* -ms-interpolation-mode:bicubic;    
+    image-rendering: optimizeQuality; */
+}
+.profile:hover
+{
+    -ms-filter:  drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(110%);
+    -webkit-filter:  drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(110%);
+    -moz-filter:  drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(110%);
+    -o-filter:  drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(110%);
+    filter:  drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(110%);    
+    
+}
+.block1
+{
+ 
+    background-color:black;
+    height: 8px;
+    width:40px; 
+    margin-top: 50px;
+    margin-left:7px; 
+    border-radius: 90px;
+}
+.block2
+{
+    margin-top: 75px;
+    margin-right: 18px;
+    float:right;
+    transform: scale(0.75,0.75);
+}
+.buttons
+{
+    margin-left:10%;
+    margin-top: 95%;
+    display:grid;
+    grid-template-columns: 36px 40px 40px;
+    grid-template-rows: 39px 42px 42px;
+}
+.shadowfilter
+{
+   -webkit-filter: drop-shadow(0px 0px 12px  rgb(197, 8, 255));
+   filter: drop-shadow(0px 0px 12px  rgb(197, 8, 255));
+}
+.buttons a
+{
+       filter: drop-shadow(0px 0px 7px  rgba(122, 0, 236, 0.489));
+}
+.abuttons a:hover
+{
+    -ms-filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255)) ;
+    -webkit-filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255)) ;
+    -moz-filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255)) ;
+    -o-filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255)) ;
+    filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255));
+}
+.buttons a img:hover
+{
+    -ms-filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(120%);
+    -webkit-filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(120%);
+    -moz-filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(120%);
+    -o-filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(120%);
+    filter:  hue-rotate(270deg) drop-shadow(0px 0px 12px  rgb(21, 115, 255)) brightness(120%);
+}
+.bilibili
+{ 
+    width:36px;
+    height:31px;
+}
+.lofter
+{
+    width:31px;
+    height:36px;
+    
+}
+.github
+{    
+    width:31px;
+    height:36px;
+
+}
+.csdn
+{    
+    width:36px;
+    height:31px;
+}
+.block3
+{
+    background-color:rgba(0, 0, 0, 0.726);
+    position:absolute;
+    height:35px;
+    width:35px;
+    bottom:100px;
+    margin-left: 110px;
+    border-radius: 5px;
+}

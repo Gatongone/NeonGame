@@ -1,0 +1,27 @@
+<%- css('css/topbar.css') %>
+<%- js(['js/searchbar.js','js/hidebar.js']) %>
+<div class="topbar" id="topbar">
+    <font class="title_top" id="title_top">Gatongone's blog</font>
+    <div id="topblock">
+        <div id="text">
+            <font id='about' class="buttonfont">▼About</font>
+            <font id="plan" class="buttonfont">Planing</font>
+            <font id="RSS" class="buttonfont">RSS</font>
+        </div>
+        <input  type="text" placeholder="search with title" value="" />
+        <button><img src="<%- url_for('images/icon/search.png') %>" style="height: 16px; width: 18px; margin-top: 2px;"></button>
+    </div>
+</div>
+<script>
+    var obj2=document.getElementById('title_top');
+    var obj3=document.getElementById("text");
+    //HideBar(obj2,1270);
+    MoveBar(obj2,"title_top2",1270);
+    //HideBar(obj3,650);
+    MoveBar(obj3,"text2",800);
+
+    if(sessionStorage.getItem("isReload")){
+    }else{
+    sessionStorage.setItem("isReload", true)
+    }
+</script>

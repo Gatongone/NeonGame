@@ -1,0 +1,68 @@
+*
+{
+   color:rgba(164, 176, 185, 0.842); 
+}
+@font-face
+{
+    font-family: 'pixel_font';  
+    src: url("/fonts/Pixel_zh.TTF");
+}
+#page_title
+{
+    color: #179287;
+    font-size: 35px;
+    font-family: 'pixel_font';  
+    filter:drop-shadow(0 0 4px rgba(54, 168, 126, 0.568));
+}
+hr
+{
+    border: 0;
+    height: 0;
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(69, 58, 80, 0.459);
+}
+.page_content a 
+{
+    text-decoration: none;
+    color:rgb(35, 113, 214);
+    filter:drop-shadow(0 0 1px rgb(149, 54, 168));
+}
+.page_content a:hover 
+{
+    text-decoration: none;
+    color:rgb(127, 35, 214);
+    filter:drop-shadow(0 0 1px rgb(79, 54, 168));
+}
+h1,h2,h3,h4,h5,h6
+{
+    color:rgba(230, 231, 204, 0.815);
+}
+code
+{
+    line-height:20px;
+}
+.footer
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    bottom: 80px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    font-size:13px;
+}
+.footer hr
+{
+    position: relative;
+    width: 1200px;
+    max-width: width 1200px;
+    margin-right: 2%;
+
+}
+img
+{
+    image-rendering: -moz-crisp-edges;      
+    image-rendering:   -o-crisp-edges;        
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;  
+    -ms-interpolation-mode: nearest-neighbor; 
+    image-rendering: optimizeQuality;
+}

@@ -1,0 +1,26 @@
+<%- css('css/navigation.css') %>
+<head>
+    <title>
+        关东关
+    </title>
+</head>
+<div class="main" id="main">
+    <font class="title" >关东关'S BLOG</font>
+
+    <div class="search" id="search">
+        <img src="<%- url_for('images/icon/search.png') %>">
+        <input  type="text" placeholder="search for something" onkeydown="searchWtihBaidu(this)" onblur="textOnBlur(this)"  onfocus="textOnFocus(this)" value="" />
+    </div>
+
+    <div class="description">
+        <p>&nbsp; &nbsp; &nbsp;This is a personal blog of Gatongone which focus on game development.
+        <p>It provide a summary of learning results and work experience of a unity3D
+        <p>learner.You can send an email to <span id="left_quotation"> "</span><span id="email">617410442@qq.com</span ><span id="right_quotation">" </span> and get in touch
+        <p>with me.
+    </div>
+    
+    <a href="<%- url_for('/blog') %>"  target="_self" class="buttonfilter start" id="start">
+        <font>START</font>
+    </a>
+
+</div>

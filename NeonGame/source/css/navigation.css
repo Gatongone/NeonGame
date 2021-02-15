@@ -1,0 +1,184 @@
+@font-face
+{
+    font-family: 'pixel_font';  
+    src: url("/fonts/Pixel_zh.TTF");
+}
+.main
+{
+    min-width:1200px;
+    position: fixed;
+    /* margin-left: 550px;
+    margin-top: 200px; */
+    
+    margin-left:35%;
+    margin-top: 12%;
+    display: grid;
+    grid-template-columns: 650px;
+
+    transform: scale(1.1);
+}
+
+.title
+{
+    color: rgb(229, 213, 39);
+    font-size: 80px;
+    font-family: "pixel_font";
+    text-align: center;
+    text-shadow: 0px 0px 20px  rgb(229, 213, 39);
+}
+.search
+{
+    width: 100%;
+    margin-top: 40px;
+}
+.search img
+{   
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    margin-top:8px;
+    margin-left: 10px;
+
+    opacity: 0.315;
+}
+.search img::selection
+{
+    opacity: 0.596;
+}
+.search input
+{
+    width:100%;
+    height: 37px;
+    background:none;  
+    outline:none;  
+
+    border-radius: 90px;
+    border: 2px solid;
+    border-color: rgba(240, 248, 255, 0.315);
+
+    text-indent: 50px;
+    color:rgba(240, 248, 255, 0.315);
+    font-size: 15px;
+}
+.search input:focus
+{
+    border-radius: 90px;
+    border: 2px solid;
+    border-color:  rgba(255, 254, 248, 0.596);
+    
+    color: rgba(255, 254, 248, 0.596);
+}
+.description
+{
+    margin-top: 30px;
+    margin-left:30px;
+
+    color: rgba(255, 254, 248, 0.596);
+    font-size: 16px;
+    font-family: "pixel_font";
+}
+.description p
+{
+    margin-top:-8px;
+
+}
+.description p #left_quotation
+{
+    color: rgba(254, 246, 164,0.9 );
+    font-size: 17px;    
+}
+.description p #right_quotation
+{
+    color: rgba(254, 246, 164,0.9 );
+    font-size: 17px;    
+}
+.description p #email
+{
+    color: rgba(254, 246, 164,0.9 );
+    font-size: 17px;
+    font-family: "pixel_font";
+    font-style: bold;
+    border-bottom: 1px solid rgba(254, 246, 164,0.9 );
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 3px;
+}
+.buttonfilter
+{
+   -webkit-filter: drop-shadow(0px 0px 6px   rgb(66, 230, 213)) brightness(99%);
+   filter: drop-shadow(0px 0px 6px   rgb(66, 230, 213)) brightness(99%);
+}
+.start
+{
+    background:none;
+    margin:0 auto;
+    margin-top: 30px;
+    height: 100px auto;
+    width: 30%;
+
+
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    border: 3px solid;
+    border-color: rgb(40, 140, 130);
+    box-shadow: 0px 0px 4px 1.5px rgba(9, 16, 29, 0.603);
+    color: rgb(40, 140, 130);
+    border-radius: 360px;
+    text-decoration: none;
+}
+.start:hover
+{
+    border-color: rgb(71, 135, 255);
+    color: rgb(41, 116, 255);
+   -webkit-filter: hue-rotate(295deg) drop-shadow(0px 0px 9px rgb(76, 243, 226)) brightness(110%);
+    filter:  hue-rotate(295deg) drop-shadow(0px 0px 9px rgb(76, 243, 226)) brightness(110%);
+
+    box-shadow: 0px 0px 7px 1px rgba(60, 151, 255, 0.603);
+}
+.start  font
+{
+    font-size: 36px;
+    font-style: bold;
+    font-family: "pixel_font";
+}
+
+.start::before,
+.start::after
+{
+    content: "";
+    position:absolute;
+    width: 24px;
+    height: 3.6px;
+    background-color: rgb(8, 18, 20);
+
+    -webkit-filter:brightness(159%);
+    filter:brightness(159%);
+
+    transform: skew(160deg);
+    transition: all 0.5s;
+    opacity: 0.7;
+
+}
+
+.start::before
+{
+    top:-2.7px;
+    left: 20%;
+}
+.start::after
+{
+    bottom:-3.1px;
+    right: 20%;
+
+    
+}
+.start:hover::before
+{
+    left: 70%;
+}
+.start:hover::after
+{
+    right: 70%;
+}

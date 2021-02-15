@@ -1,0 +1,97 @@
+<%- css('css/mainbody.css') %>
+
+<!-- 回到首页 -->
+<% if(is_post()){ %>
+    <a href="<%- url_for('/blog') %>">
+    <button class="home_btn">
+        <img src="<%- url_for('images/icon/home.png') %>">
+    </button>
+    </a>
+<% } %>
+
+<!-- 回到顶部 -->
+<div id="top">
+    <button class="top_btn" id="top_btn">
+        <img src="<%- url_for('images/icon/top.png') %>">
+    </button>
+</div>
+<!-- 主体 -->
+
+<div class="mainbody" id="mainbody">
+<!-- 加载post_entry -->
+
+    <% if(path == "blog/index.html"){ %>
+
+        <%- partial("partial/rightbar") %>
+
+        <% site.posts.sort("date", "desc").each(function(post){ %>
+            <%- partial("partial/post_entry", {post: post}) %>
+        <% }) %>
+    <% } %>
+    
+<!--    加载post    -->    
+
+    <% if(is_post()){ %>
+        <%- partial("post") %>
+    <% } %>
+
+</div>
+
+<script>
+     var bar=document.getElementById("top_btn")
+     var showtime=0;
+     var hidetime=0;
+     window.addEventListener("pageshow",function(){
+         let scrollTop = window.pageYOffset ||document.documentElement.scrollTop|| document.body.scrollTop || 0;
+        if(scrollTop ==0)
+        {
+            bar.style.display = 'none';
+        }
+        else
+        {
+            bar.style.display = 'block';
+        }
+        window.addEventListener("scroll",function(){
+            bar.style.display = 'block';
+            scrollTop = window.pageYOffset ||document.documentElement.scrollTop|| document.body.scrollTop || 0;
+            if(scrollTop != 0)
+            {
+                if(hidetime==0)
+                {
+                    bar.classList.toggle("top_btn_show");
+                    hidetime++;
+                }
+                showtime=0;
+            }  
+            else
+            {
+                if(showtime==0 && hidetime!=0)
+                {
+                    bar.classList.toggle("top_btn_show");
+                    showtime++;
+                    hidetime=0;
+                }
+            }
+        }) 
+     })
+     
+    var timer = null;
+    bar.onclick = function()
+    {
+        cancelAnimationFrame(timer);
+        timer = requestAnimationFrame(function fn()
+        {
+            var top = document.body.scrollTop || document.documentElement.scrollTop;
+            if(top > 0)
+            {
+                document.body.scrollTop = document.documentElement.scrollTop = top - 80;
+                timer = requestAnimationFrame(fn);
+            }
+            else
+            {
+                cancelAnimationFrame(timer);
+            } 
+        });
+    }
+         
+</script>

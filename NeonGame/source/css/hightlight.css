@@ -1,0 +1,104 @@
+@media (max-width: 767px) {
+  .pre-numbering {
+    display: none;
+  }
+  .has-numbering {
+    margin-left: -10px !important;
+    word-wrap: break-world !important;
+    white-space: pre-wrap !important;
+  }
+}
+
+/* 代码高亮 */
+@font-face
+{
+    font-family: 'consola';  
+    src: url("/fonts/consola.ttf");
+}
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	color: rgb(224, 216, 236);
+    background: rgb(9,9,24);
+    
+    padding-left:50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    border-radius: 40px;
+    font-size:14px;
+	font-family:'consola';
+	font-weight: normal;
+}
+
+.hljs-comment,.hljs-quote {
+	color:rgba(139, 149, 158, 0.808);
+}
+
+.hljs-keyword,.hljs-selector-tag,.hljs-subst {
+    color: rgb(233, 106, 97);
+    font-weight: bold;
+}
+
+.hljs-number,.hljs-literal,.hljs-variable,.hljs-template-variable,.hljs-tag .hljs-attr {
+	color: #008080
+}
+
+.hljs-string,.hljs-doctag {
+	color: #d14
+}
+
+.hljs-title,.hljs-section,.hljs-selector-id {
+	color: rgb(186, 93, 223);
+    font-weight: bold;
+}
+
+.hljs-subst {
+	font-weight: normal
+}
+
+.hljs-type,.hljs-class .hljs-title {
+	color: #458;
+	font-weight: bold
+}
+
+.hljs-tag,.hljs-name,.hljs-attribute {
+	color: #000080;
+	font-weight: normal
+}
+
+.hljs-regexp,.hljs-link {
+	color: #009926
+}
+
+.hljs-symbol,.hljs-bullet {
+	color: #990073
+}
+
+.hljs-built_in,.hljs-builtin-name {
+	color: #0086b3
+}
+
+.hljs-meta {
+	color: #999;
+	font-weight: bold
+}
+
+.hljs-deletion {
+	background: #fdd
+}
+
+.hljs-addition {
+	background: #dfd
+}
+
+.hljs-emphasis {
+	font-style: italic
+}
+
+.hljs-strong {
+	font-weight: bold
+}
+
+

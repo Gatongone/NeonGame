@@ -1,0 +1,23 @@
+<%- css('css/rightbar.css') %>
+<%- js('js/hidebar.js') %>
+<div id="right_bar">
+
+    <div id="recent_update" class="recent_update">
+        <span> Recent Update </span>
+        <div>
+         <% var i=0; site.posts.sort("date", "desc").each(function(post){ if(i>=5)return;i++; %><a href="<%- config.root %><%- post.path %>" class="post"><%- post.title %> </a><% }) %>
+        </div>
+    </div>
+
+    <div id="tagcloud" class="tagcloud">
+        <span> Trending Tags </span>
+        <div>
+         <% var j=0; site.tags.each(function(tag){ if(j>=5)return;j++; %><a href="#" class="tag"><%- tag.name %> </a><% }) %>
+        </div>
+    </div>
+
+</div>
+<script>
+    var bar=document.getElementById("right_bar");
+    MoveBar(bar,"right_bar_hide",1120)
+</script>
